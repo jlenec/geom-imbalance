@@ -2,6 +2,14 @@
 
 This repository contains the implementation and experimental validation for our paper showing that class imbalance in machine learning is fundamentally a threshold selection problem, not a training problem.
 
+## Abstract
+
+Class imbalance presents a fundamental challenge in machine learning, routinely addressed through resampling, loss reweighting, or model retraining. These widespread practices implicitly assume that shifts in class prevalence necessitate relearning the underlying decision geometry. This paper challenges this assumption by developing a geometric theory of classification that rigorously separates *discriminant geometry*—determined solely by class-conditional distributions—from *prevalence priors*, which affect only scalar decision thresholds.
+
+We prove that under label shift, Bayes-optimal adaptation requires merely a threshold adjustment, leaving the discriminant field invariant. This geometric invariance manifests as preserved level sets of the log-likelihood ratio, with adaptation corresponding to selecting different superlevel sets without any rotation or deformation of the underlying field. Furthermore, we demonstrate that retraining on reweighted data not only lacks theoretical justification but actively degrades performance by reducing effective sample size and increasing estimation variance.
+
+Our theoretical framework is validated through comprehensive experiments spanning synthetic and real-world datasets. The experiments confirm that simple offset correction achieves near-optimal performance under label shift, that evaluation metrics like AUC exhibit the predicted invariance properties, and that reweighting indeed reduces statistical efficiency as our theory predicts. In contrast, when true concept drift occurs—altering the class-conditional distributions themselves—retraining becomes necessary while offset correction fails. These findings establish principled guidelines for practitioners: estimate discriminant geometry using all available data without artificial reweighting, then adapt to deployment conditions through analytical threshold updates.
+
 ## Key Findings
 
 Our work challenges the widespread practice of reweighting/resampling for class imbalance:
