@@ -129,11 +129,12 @@ Under label shift, only π changes while p(x|y) remains fixed. Therefore:
 
 If you use this code or theory in your research, please cite:
 ```bibtex
-@article{sudjianto2024resampling,
-  title={The Resampling Delusion: Why Class Imbalance Is a Threshold Problem, Not a Training Problem},
+@misc{sudjianto2024resampling,
+  title={The Resampling Delusion: A Geometric Theory of Class Imbalance},
   author={Sudjianto, Agus},
-  journal={arXiv preprint arXiv:XXXX.XXXXX},
-  year={2024}
+  year={2024},
+  howpublished={\url{https://github.com/asudjianto-xml/geom-imbalance}},
+  note={GitHub repository}
 }
 ```
 
