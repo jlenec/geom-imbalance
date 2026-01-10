@@ -1,0 +1,37 @@
+{
+  "experiment": "exp1",
+  "datasets": [
+    "synthetic",
+    "breast_cancer"
+  ],
+  "models": [
+    "LogisticRegression",
+    "XGBoost"
+  ],
+  "pi_train": 0.2,
+  "pi_test_grid": [
+    0.5,
+    0.2,
+    0.1,
+    0.05,
+    0.01
+  ],
+  "costs_grid": [
+    [
+      1.0,
+      1.0
+    ],
+    [
+      10.0,
+      1.0
+    ],
+    [
+      1.0,
+      10.0
+    ]
+  ],
+  "n_seeds": 10,
+  "n_results": 1800,
+  "timestamp": "2026-01-09T19:22:52.010677",
+  "git_commit": "unknown"
+}

@@ -1,0 +1,155 @@
+{
+  "exp1_auc_invariance": {
+    "check_name": "auc_invariance",
+    "tolerance": 0.01,
+    "passed": false,
+    "violations": [
+      {
+        "group": {
+          "dataset": "breast_cancer",
+          "model": "XGBoost",
+          "seed": 6
+        },
+        "auc_range": 0.012156499999999903,
+        "auc_min": 0.9718323888888888,
+        "auc_max": 0.9839888888888887
+      },
+      {
+        "group": {
+          "dataset": "synthetic",
+          "model": "LogisticRegression",
+          "seed": 2
+        },
+        "auc_range": 0.018060512626262626,
+        "auc_min": 0.9269820707070706,
+        "auc_max": 0.9450425833333332
+      },
+      {
+        "group": {
+          "dataset": "synthetic",
+          "model": "LogisticRegression",
+          "seed": 8
+        },
+        "auc_range": 0.011262114832535919,
+        "auc_min": 0.9411151578947368,
+        "auc_max": 0.9523772727272727
+      },
+      {
+        "group": {
+          "dataset": "synthetic",
+          "model": "LogisticRegression",
+          "seed": 9
+        },
+        "auc_range": 0.01683398863636365,
+        "auc_min": 0.946952375,
+        "auc_max": 0.9637863636363636
+      },
+      {
+        "group": {
+          "dataset": "synthetic",
+          "model": "XGBoost",
+          "seed": 1
+        },
+        "auc_range": 0.011324365762892086,
+        "auc_min": 0.935719447368421,
+        "auc_max": 0.9470438131313131
+      },
+      {
+        "group": {
+          "dataset": "synthetic",
+          "model": "XGBoost",
+          "seed": 2
+        },
+        "auc_range": 0.020566802477904322,
+        "auc_min": 0.9230845959595959,
+        "auc_max": 0.9436513984375002
+      },
+      {
+        "group": {
+          "dataset": "synthetic",
+          "model": "XGBoost",
+          "seed": 8
+        },
+        "auc_range": 0.010294697501329386,
+        "auc_min": 0.9394737368421051,
+        "auc_max": 0.9497684343434345
+      },
+      {
+        "group": {
+          "dataset": "synthetic",
+          "model": "XGBoost",
+          "seed": 9
+        },
+        "auc_range": 0.017123983033459633,
+        "auc_min": 0.9457219765624999,
+        "auc_max": 0.9628459595959595
+      }
+    ],
+    "n_violations": 8
+  },
+  "exp1_offset_improvement": {
+    "check_name": "offset_improvement",
+    "test_pi": 0.01,
+    "passed": false,
+    "violations": [
+      {
+        "group": {
+          "dataset": "breast_cancer",
+          "model": "LogisticRegression",
+          "c10": 10.0,
+          "c01": 1.0
+        },
+        "nocorr_risk": 0.00186,
+        "offset_risk": 0.0041,
+        "risk_increase": 0.0022400000000000002
+      }
+    ],
+    "n_violations": 1
+  },
+  "exp3_neff_monotonicity": {
+    "check_name": "neff_monotonicity",
+    "passed": false,
+    "violations": [
+      {
+        "dataset": "breast_cancer",
+        "model": "LogisticRegression",
+        "alpha1": 0,
+        "alpha2": 1,
+        "neff1": 152.0,
+        "neff2": 381.0,
+        "increase": 229.0
+      },
+      {
+        "dataset": "synthetic",
+        "model": "LogisticRegression",
+        "alpha1": 0,
+        "alpha2": 1,
+        "neff1": 16000.0,
+        "neff2": 40000.0,
+        "increase": 24000.0
+      }
+    ],
+    "n_violations": 2
+  },
+  "exp5_concept_drift": {
+    "check_name": "concept_drift_response",
+    "passed": false,
+    "details": [
+      {
+        "issue": "retrain_insufficient",
+        "dataset": "synthetic",
+        "model": "LogisticRegression",
+        "improvement": 0.0016678718749999488
+      },
+      {
+        "issue": "retrain_insufficient",
+        "dataset": "synthetic",
+        "model": "XGBoost",
+        "improvement": 0.001012138281250019
+      }
+    ]
+  },
+  "overall_passed": false,
+  "timestamp": "2026-01-09T19:23:14.860065",
+  "git_commit": "unknown"
+}

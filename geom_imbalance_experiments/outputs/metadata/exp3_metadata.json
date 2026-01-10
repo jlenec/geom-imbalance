@@ -1,0 +1,21 @@
+{
+  "experiment": "exp3",
+  "datasets": [
+    "synthetic",
+    "breast_cancer"
+  ],
+  "alpha_values": [
+    0,
+    1,
+    5,
+    10,
+    20,
+    50
+  ],
+  "pi_train": 0.2,
+  "n_seeds": 10,
+  "n_results": 120,
+  "n_stability": 540,
+  "timestamp": "2026-01-09T19:23:02.755768",
+  "git_commit": "unknown"
+}

@@ -1,0 +1,11 @@
+PAPER RESULTS SUMMARY
+==================================================
+
+Experiment runs: 2480 total results
+Seeds: 10
+Test prevalences: [np.float64(0.01), np.float64(0.05), np.float64(0.1), np.float64(0.2), np.float64(0.5)]
+
+Key findings:
+- Risk reduction at pi=0.01: 0.022
+- AUC range: 0.0020
+- Concept drift retrain improvement: 0.0013

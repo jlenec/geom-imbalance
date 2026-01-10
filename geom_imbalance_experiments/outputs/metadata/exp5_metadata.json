@@ -1,0 +1,20 @@
+{
+  "experiment": "exp5",
+  "dataset": "synthetic",
+  "models": [
+    "LogisticRegression",
+    "XGBoost"
+  ],
+  "pi_train": 0.2,
+  "pi_test": 0.2,
+  "drift_params": {
+    "shift_dims": 3,
+    "shift_class1": 0.8,
+    "shift_class0": -0.2,
+    "noise_std": 0.2
+  },
+  "n_seeds": 10,
+  "n_results": 60,
+  "timestamp": "2026-01-09T19:23:14.806561",
+  "git_commit": "unknown"
+}
