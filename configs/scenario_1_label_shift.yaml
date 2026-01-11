@@ -1,0 +1,35 @@
+name: "Scenario 1: Pure Label Shift"
+scenario: 1
+
+# Data generation
+n_ref_train: 50000
+n_ref_val: 20000
+T_deploy: 200000
+d: 10
+delta: 2.0
+pos_rate_ref: 0.02
+
+# Detector settings
+n_u: 2000
+step_u: 2000
+lambda_ewma: 0.1
+
+# Calibration
+N_cal: 200
+alpha_d: 0.01
+alpha_r: 0.01
+alpha_pi: 0.01
+
+# Delayed labels
+delay_D: 20000
+n_l: 5000
+n_min_pos: 50
+
+# Fixed threshold for BBSE
+tau0: 0.5
+
+# Bootstrap
+bootstrap_B: 200
+
+# Random seed
+seed: 42
