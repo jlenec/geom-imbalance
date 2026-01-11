@@ -142,14 +142,17 @@ def run_scenario(config: dict, output_dir: str):
         S_deploy = apply_score_transform(
             S_original,
             drift_time=config.get('drift_time', 80000),
-            a=0.7,
-            b=0.4
+            a=config.get('score_transform_a', 0.7),
+            b=config.get('score_transform_b', 0.4)
         )
 
     elif scenario == 4:
         # Covariate shift (benign)
         X_deploy, Y_deploy, drift_indicator = generator.scenario_4_covariate_shift_benign(
-            T, drift_time=config.get('drift_time', 80000)
+            T,
+            drift_time=config.get('drift_time', 80000),
+            shift_dim=config.get('shift_dim', 5),
+            shift_amount=config.get('shift_amount', 3.0)
         )
         S_deploy = model.predict_proba(X_deploy)[:, 1]
 
