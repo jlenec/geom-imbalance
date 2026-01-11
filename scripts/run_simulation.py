@@ -88,9 +88,9 @@ def run_scenario(config: dict, output_dir: str):
         bootstrap_seed=config['seed']
     )
 
-    print(f"  π_ref = {ref_model.pi_ref:.4f}")
+    print(f"  pi_ref = {ref_model.pi_ref:.4f}")
     print(f"  det(C) = {np.linalg.det(ref_model.C_hat):.4f}")
-    print(f"  δ_C = {ref_model.delta_C:.4f}")
+    print(f"  delta_C = {ref_model.delta_C:.4f}")
 
     # Calibrate thresholds
     print("Calibrating thresholds...")
@@ -108,7 +108,7 @@ def run_scenario(config: dict, output_dir: str):
 
     print(f"  d_th = {ref_model.d_th:.4f}")
     print(f"  r_th = {ref_model.r_th:.4f}" if ref_model.r_th else "  r_th = None (BBSE unstable)")
-    print(f"  π_th = {ref_model.pi_th:.4f}")
+    print(f"  pi_th = {ref_model.pi_th:.4f}")
 
     # Generate deployment data based on scenario
     print(f"\nGenerating deployment data for scenario {config['scenario']}...")
@@ -157,7 +157,7 @@ def run_scenario(config: dict, output_dir: str):
         raise ValueError(f"Unknown scenario: {scenario}")
 
     print(f"  Deployment samples: {len(S_deploy)}")
-    print(f"  Deployment π: {np.mean(Y_deploy):.4f}")
+    print(f"  Deployment pi: {np.mean(Y_deploy):.4f}")
 
     # Run drift detector
     print("\nRunning drift detector...")
